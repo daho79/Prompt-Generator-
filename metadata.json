@@ -1,0 +1,5 @@
+{
+  "name": "AI Image Prompt Generator",
+  "description": "Upload any image and generate a highly detailed and precise prompt using the Gemini API. Perfect for reverse-engineering prompts or for creative inspiration.",
+  "requestFramePermissions": []
+}
