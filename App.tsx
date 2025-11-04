@@ -58,11 +58,11 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-200 flex flex-col items-center p-4 sm:p-6 lg:p-8 font-sans">
+    <div className="min-h-screen text-slate-200 flex flex-col items-center p-4 sm:p-6 lg:p-8 font-sans">
       <Header />
       <main className="w-full max-w-6xl mx-auto flex-grow flex flex-col lg:flex-row gap-8 mt-8">
         {/* Left Panel: Image Uploader / Preview */}
-        <div className="lg:w-1/2 flex flex-col bg-slate-800/50 rounded-2xl border border-slate-700 shadow-2xl shadow-slate-950/50">
+        <div className="lg:w-1/2 flex flex-col bg-slate-900/30 rounded-2xl border border-white/20 shadow-2xl shadow-black/40">
           {!imageUrl ? (
             <ImageUploader onImageUpload={handleImageUpload} isProcessing={isLoading} />
           ) : (
@@ -89,7 +89,7 @@ const App: React.FC = () => {
 
         {/* Right Panel: Actions and Results */}
         <div className="lg:w-1/2 flex flex-col space-y-6">
-          <div className="flex-grow flex flex-col justify-center items-center bg-slate-800/50 rounded-2xl border border-slate-700 p-6 shadow-2xl shadow-slate-950/50 min-h-[300px] lg:min-h-full">
+          <div className="flex-grow flex flex-col justify-center items-center bg-slate-900/30 rounded-2xl border border-white/20 p-6 shadow-2xl shadow-black/40 min-h-[300px] lg:min-h-full">
             {isLoading ? (
               <Spinner />
             ) : error ? (

@@ -17,6 +17,20 @@
         }
       }
     </script>
+    <style>
+      body {
+        background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+      #root {
+        min-height: 100vh;
+        background-color: rgba(15, 23, 42, 0.3); /* Corresponds to slate-900 with 30% opacity */
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px); /* For Safari */
+      }
+    </style>
 <script type="importmap">
 {
   "imports": {
@@ -28,7 +42,7 @@
 }
 </script>
 </head>
-<body class="bg-slate-900">
+<body>
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
 </body>
